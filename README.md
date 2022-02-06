@@ -1,4 +1,4 @@
-# cti
+# Cyber Threat Intelligence (CTI)
 
 Building and operating CTI (Cyber Threat Intelligence)
 
@@ -8,7 +8,9 @@ Building and operating CTI (Cyber Threat Intelligence)
 
 ## Build own Threat Intelligence Platform
 
-Most commercial TIPs doesn't provide customized. This means you can only manage/use the threat intelligence they provide.
+Most commercial TIPs doesn't provide customized. (ex. add own threat intelligence)
+
+This means you can only manage/use the threat intelligence they provide.
 
 So, I thought we need own platform. The recommended platform are:
 
@@ -20,7 +22,7 @@ So, I thought we need own platform. The recommended platform are:
 
 You can gather open-source intelligence from various channel.
 
-It's provides in a standard (or not) form such as STIX/TAXII. 
+It's provides in a standard (or not) form such as STIX/TAXII.
 
 * [AlienVault](https://otx.alienvault.com/)
 * [Feodo Tracker](https://feodotracker.abuse.ch/)
@@ -45,23 +47,30 @@ The use case below is described based on MISP.
 
 #### Use Case #1. Create Reserved Event
 
+We're gathering many types threat intelligence from various channel. and it will increase.
+
+Therefore, flexibility should be taken into account when building a MISP.
+For example, I created 100 reserved event and some define them like this:
+
+![event](./images/event.png)
+
 
 #### Use Case #2. Traffic Light Protocol (TLP)
  
-Why do we need TLP ? Answer is simple. We don't want to publicly publish everything.
+Why do we need TLP ? the answer is we don't want to publicly publish everything.
 
 * [TRAFFIC LIGHT PROTOCOL](https://www.first.org/tlp/)
 
 The Traffic Light Protocol (TLP) was created in order to facilitate greater sharing of information. TLP is a set of designations used to ensure that sensitive information is shared with the appropriate audience.
 
-This is not forced by systems. It just optimized for ease of adoption, human readability and person-to-person sharing.
-
-![tlp](./images/tlp.png)
-
-Tagging is a simple way to attach a classification to an event in MISP. 
-After evaluating different solutions of classification, we build a new scheme using the concept of machine tags.
+It just optimized for ease of adoption, human readability and person-to-person sharing.
 
 You can use tags in MISP to specify the scope of the share.
+
+Tagging is a simple way to attach a classification to an event in MISP.
+After evaluating different solutions of classification, we build a new scheme using the concept of machine tags.
+
+![tlp](./images/tlp.png)
 
 
 #### Use Case #3. Manage threat intelligence lifecycle
