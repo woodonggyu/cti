@@ -51,6 +51,7 @@
 * [National Vulnerability Management (NVD)](https://nvd.nist.gov/)
 * [MITRE ATT&CK](https://github.com/mitre/cti)
 
+<br>
 
 * [VirusTotal](https://www.virustotal.com)
 * [SOC PRIME](https://socprime.com/)
@@ -161,5 +162,12 @@ result : base_score = 87.50
 
 <br>
 
-#### Use Case #4. 위협 인텔리전스 공유
+## 위협 인텔리전스 활용한 알려진 위협 대응
 
+앞에서는 위협 인텔리전스를 수집하고 효과적으로 운영하기 위한 여러 활용 사례들을 설명했다.
+
+알려진 위협에 대응하기 위해서, 조직에서 사용하고 있는 보안솔루션 (FW, ID(P)S, WAF 등) 에 위협 인텔리전스를 업데이트를 하면 된다. 
+이를 위한 몇 가지 방법은 다음과 같다.
+
+* 웹 서버 (ex. Nginx, Apache) 활용한 위협 인텔리전스 업데이트
+* STIX/TAXII 활용한 위협 인텔리전스 업데이트
