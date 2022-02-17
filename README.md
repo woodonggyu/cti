@@ -206,3 +206,13 @@ result : base_score = 87.50
 
 **[4] 위협 인텔리전스 적용** 단계 에서는, 보안솔루션에서 웹 또는 TAXII 서버에 업데이트된 검증이 완료된 위협 인텔리전스를 적용하는 작업이다.
 (구성 환경에 따라 방화벽 오픈 작업이 필요할 수 있다.)
+
+<br>
+
+## 참고
+
+* [Introduction to STIX](https://oasis-open.github.io/cti-documentation/stix/intro)
+* [Introduction to TAXII](https://oasis-open.github.io/cti-documentation/taxii/intro.html)
+* [TAXII Version 2.0](https://docs.oasis-open.org/cti/taxii/v2.0/taxii-v2.0.html)
+* [TAXII Version 2.1](https://docs.oasis-open.org/cti/taxii/v2.1/cs01/taxii-v2.1-cs01.html#_Toc31107530)
+* [OASIS Repositories](https://github.com/oasis-open)
